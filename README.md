@@ -81,7 +81,7 @@ This should open the app in your browser, at the following URL:
 
 - This has been a great exercise for me...............................................................................................
 - As mentioned in part 3 of the brief, my thoughts on how we could improve the product's functionality:
-    * It would be great to be able to log in as a user and save pictures in a 'favourites' category, so that you can create mood boards of which pictures inspire you. This would make each users' account more bespoke and improve the experience.
+    * It would be great to be able to log in as a user and save pictures in a 'favourites' category, so that you can create mood boards of which pictures inspire you. This would improve the experience of each user by making it more bespoke.
     * Another good thing would be to submit your own pictures to be added to the app.
 
 
