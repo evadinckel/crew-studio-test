@@ -1,8 +1,19 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import SlideOne from './slideOne';
+import SlideTwo from './slideTwo';
+import SlideThree from './slideThree';
+import SlideFour from './slideFour';
+
 
 class App extends React.Component {
+constructor(props) {
+  super(props);
 
+  this.state = {
+    slideCount : 1
+  }
+
+}
 
 
 
@@ -11,10 +22,10 @@ render() {
 
   return (
   <div className="App">
-    <div className = "App-intro"><p>Awesome picture gallery</p></div>
-      <div><img src={require('./1 Alan Berryhill 2018-04-17 person, outdoors, rain.jpg')} /></div>
-      <div><img src={require('./2 Allyson Brar 2018-04-19 person, hands, paints.jpg')} /></div>
-      <div><img src={require('./3 Alvera Tinker 2018-05-09 objects, paints, from-above.jpg')} /></div>
+    { this.state.slideCount === 1 ? <SlideOne /> : null }
+    { this.state.slideCount === 2 ? <SlideTwo /> : null }
+    { this.state.slideCount === 3 ? <SlideThree /> : null }
+    { this.state.slideCount === 4 ? <SlideFour /> : null }
   </div>
     );
 
