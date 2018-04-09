@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const SlideTwo= (props) => {
   let backgound = {
-      backgoundImage: 'url(2 Allyson Brar 2018-04-19 person, hands, paints.jpg)',
+      backgoundImage: 'url(./2 Allyson Brar 2018-04-19 person, hands, paints.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center'
   }
