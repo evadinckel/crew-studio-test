@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const LeftArrow = (props) => {
   return (
     <div onClick={props.previousSlide} className="backArrow">

@@ -82,6 +82,9 @@ $ npm start
 ### Notes
 
 - I didn't manage to take this app as far I would have liked to, but it has been a great exercise for me, tech tests are always a great opportunity to practice.
+- I have implemented slides components that use the pictures shared by crew studio as background. This could have been refactored by using only one slide component that interpolates the path of each picture.
+
+
 - As mentioned in part 3 of the brief, my thoughts on how we could improve the product's functionality:
     * It would be great to be able to log in as a user and save pictures in a 'favourites' category, so that you can create mood boards of which pictures inspire you. This would improve the experience of each user by making it more bespoke.
     * Another good thing would be to submit your own pictures to be added to the app.

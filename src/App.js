@@ -7,17 +7,28 @@ import RightArrow from './rightArrow';
 import LeftArrow from './leftArrow';
 
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
 
   this.state = {
     slideCount : 1
   }
+
+
   this.nextSlide = this.nextSlide.bind(this);
   this.previousSlide = this.previousSlide.bind(this);
 
 }
+
+  nextSlide() {
+      this.setState({ slideCount: this.state.slideCount + 1 })
+  }
+
+  previousSlide() {
+      this.setState({ slideCount: this.state.slideCount - 1 })
+  }
+
 
 render() {
 
@@ -32,13 +43,9 @@ render() {
     </div>
     );
   }
-  nextSlide() {
-      this.setState({ slideCount: this.state.slideCount + 1 })
-  }
 
-  previousSlide() {
-      this.setState({ slideCount: this.state.slideCount - 1 })
-  }
 
 
 }
+
+export default App;
