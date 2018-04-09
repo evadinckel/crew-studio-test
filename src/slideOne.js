@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 
 const SlideOne= (props) => {
 
-  let backgound = {
+  let background = {
       backgoundImage: 'url(Alan_Berryhill.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center'

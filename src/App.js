@@ -3,13 +3,13 @@ import SlideOne from './slideOne';
 import SlideTwo from './slideTwo';
 import SlideThree from './slideThree';
 import SlideFour from './slideFour';
-import RightArrow from './rightArrow.js';
-import leftArrow from './leftArrow.js'
+import RightArrow from './rightArrow';
+import LeftArrow from './leftArrow';
 
 
-class App extends React.Component {
-constructor(props) {
-  super(props);
+export default class App extends Component {
+  constructor(props) {
+    super(props);
 
   this.state = {
     slideCount : 1
@@ -27,10 +27,8 @@ render() {
       { this.state.slideCount === 2 ? <SlideTwo /> : null }
       { this.state.slideCount === 3 ? <SlideThree /> : null }
       { this.state.slideCount === 4 ? <SlideFour /> : null }
-
-<RightArrow nextSlide={this.nextSlide} />
-<LeftArrow previousSlide={this.previousSlide} />
-
+      <RightArrow nextSlide={this.nextSlide} />
+      <LeftArrow previousSlide={this.previousSlide} />
     </div>
     );
   }
@@ -44,11 +42,3 @@ render() {
 
 
 }
-
-
-
-
-
-
-
-export default App;

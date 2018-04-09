@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React from  'react';
+
+
 
 const SlideFour= (props) => {
-  let backgound = {
-      backgoundImage: 'url(./4 Alysha Nakagawa 2018-05-10 people, hands, embrace.jpg)',
+
+  let background = {
+      backgoundImage: 'url(Alysha_Nakagawa.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center'
-  }
+  };
 
 
 

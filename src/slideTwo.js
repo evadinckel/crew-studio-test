@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 
 const SlideTwo= (props) => {
-  let backgound = {
-      backgoundImage: 'url(./2 Allyson Brar 2018-04-19 person, hands, paints.jpg)',
+
+  let background = {
+      backgoundImage: 'url(Allyson_Brar.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center'
   }
