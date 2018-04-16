@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styling/slides.css';
-import Image from "../Alan_Berryhill.jpg"
+import Image from "../pictures/Alan_Berryhill.jpg"
 
 const SlideOne= (props) => {
 

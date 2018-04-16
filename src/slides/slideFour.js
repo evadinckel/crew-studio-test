@@ -1,6 +1,6 @@
 import React from  'react';
 import '../styling/slides.css';
-import Image from "../Alysha_Nakagawa.jpg"
+import Image from "../pictures/Alysha_Nakagawa.jpg"
 
 
 const SlideFour= (props) => {
