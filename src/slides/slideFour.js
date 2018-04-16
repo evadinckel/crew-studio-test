@@ -1,13 +1,15 @@
 import React from  'react';
-
+import '../styling/slides.css';
+import Image from "../Alysha_Nakagawa.jpg"
 
 
 const SlideFour= (props) => {
 
   let background = {
-      backgoundImage: 'url(Alysha_Nakagawa.jpg)',
+      backgroundImage: `url(${Image})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+      height: 400
   };
 
 

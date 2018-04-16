@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import SlideOne from './slideOne';
-import SlideTwo from './slideTwo';
-import SlideThree from './slideThree';
-import SlideFour from './slideFour';
-import RightArrow from './rightArrow';
-import LeftArrow from './leftArrow';
+import './styling/app.css';
+import SlideOne from './slides/slideOne';
+import SlideTwo from './slides/slideTwo';
+import SlideThree from './slides/slideThree';
+import SlideFour from './slides/slideFour';
+import RightArrow from './arrows/rightArrow';
+import LeftArrow from './arrows/leftArrow';
 
 
 class App extends Component {
@@ -13,8 +14,7 @@ class App extends Component {
 
   this.state = {
     slideCount : 1
-  }
-
+ }
 
   this.nextSlide = this.nextSlide.bind(this);
   this.previousSlide = this.previousSlide.bind(this);
@@ -22,18 +22,26 @@ class App extends Component {
 }
 
   nextSlide() {
-      this.setState({ slideCount: this.state.slideCount + 1 })
+      if (this.state.slideCount < 4) {
+        this.setState({ slideCount: this.state.slideCount + 1 })
+      }
+
   }
 
   previousSlide() {
+    if (this.state.slideCount > 1) {
       this.setState({ slideCount: this.state.slideCount - 1 })
+    }
   }
 
 
 render() {
-
+  const inlineStyle={
+    color:'red'
+  }
   return (
-    <div className="App">
+
+    <div style={inlineStyle} className="App">
       { this.state.slideCount === 1 ? <SlideOne /> : null }
       { this.state.slideCount === 2 ? <SlideTwo /> : null }
       { this.state.slideCount === 3 ? <SlideThree /> : null }
@@ -43,8 +51,6 @@ render() {
     </div>
     );
   }
-
-
 
 }
 

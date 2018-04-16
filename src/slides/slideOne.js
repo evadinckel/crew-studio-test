@@ -1,15 +1,17 @@
 import React from 'react';
-
+import '../styling/slides.css';
+import Image from "../Alan_Berryhill.jpg"
 
 const SlideOne= (props) => {
 
   let background = {
-      backgoundImage: 'url(Alan_Berryhill.jpg)',
+      backgroundImage: `url(${Image})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+      height: 400
   }
 
-  
+
   return <div style={background} className="slide"></div>
 }
 

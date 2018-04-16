@@ -1,12 +1,14 @@
 import React from 'react';
-
+import '../styling/slides.css'
+import Image from "../Allyson_Brar.jpg"
 
 const SlideTwo= (props) => {
 
   let background = {
-      backgoundImage: 'url(Allyson_Brar.jpg)',
+      backgroundImage: `url(${Image})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+      height: 400
   }
 
 
